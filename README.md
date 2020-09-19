@@ -2,6 +2,16 @@
 
 You can view the result [here](https://ryuzeke.github.io/ryuzeke-tetris/dist/)
 
+
+### Gameplay
+
+| key | description |
+| ------ | ----------- |
+| ARROW UP | rotates the shape |
+| ARROW LEFT | goes the shape one column left |
+| ARROW RIGHT | goes the shape one column right |
+| ARROW DOWN | goes the shape one row down |
+
 ### Installation
 
 ```sh
