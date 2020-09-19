@@ -1,0 +1,7 @@
+[
+    {"initial_rotate": 1, "color":"0xf542ec", "initial_column": 0, "rect":[[0,0,0],[1,0,0],[1,1,0]] },
+    {"initial_rotate": 0, "color":"0xd92b7f", "initial_column": 0, "rect":[[0,0,0],[0,0,0],[1,1,1]] },
+    {"initial_rotate": 2, "color":"0x2bd97c", "initial_column": 0, "rect":[[0,0,0],[1,0,1],[0,1,0]] },
+    {"initial_rotate": 0, "color":"0xd9d92b", "initial_column": 0, "rect":[[0,0,0],[1,0,0],[0,1,1]] },
+    {"initial_rotate": 3, "color":"0x26d5de", "initial_column": 0, "rect":[[1,0,0],[0,1,0],[0,0,1]] }
+]
