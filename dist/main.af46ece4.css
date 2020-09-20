@@ -2,7 +2,7 @@ body {
     margin:0;
     padding:0;
     overflow:hidden;
-    background-image: url("background.png");
+    background-image: url("/background.e3ad310f.png");
     height: 100%;
 }
 
@@ -13,3 +13,6 @@ canvas {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/*# sourceMappingURL=/main.af46ece4.css.map */
