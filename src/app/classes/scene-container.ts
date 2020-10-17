@@ -14,6 +14,8 @@ export default class extends Container {
     private shared: any
     public graphicObjects: graphicObjects
     private rectSize: pointRect;
+    private bestScore: Text;
+    private score: Text;
     constructor(shared: any) {
         super();
         this.shared = shared;
@@ -100,6 +102,7 @@ export default class extends Container {
         text.name = 'score'
         this.graphicObjects.scoreContainer.addChild(rect);
         this.graphicObjects.scoreContainer.addChild(text);
+        this.score = text;
     }
 
     private generateIdleContainer(): void{
@@ -135,6 +138,7 @@ export default class extends Container {
         textBestScore.x = 300;
         textBestScore.y = 1120;
         textBestScore.name = 'best-score'
+        this.bestScore = textBestScore;
         // generate best score stop
 
 
@@ -161,13 +165,11 @@ export default class extends Container {
 
 
     public updateScore(newScore: number): void {
-        var textDisplayObject: any = this.graphicObjects.scoreContainer.getChildByName('score')
-        textDisplayObject.text = newScore
+        this.score.text = String(newScore)
     }
 
 
     public updateBestScore(newScore: string): void {
-        var textDisplayObject: any = this.graphicObjects.idleContainer.getChildByName('best-score')
-        textDisplayObject.text = 'BEST SCORE: '+newScore
+        this.bestScore.text = 'BEST SCORE: '+newScore
     }
 }

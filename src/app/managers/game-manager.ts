@@ -69,10 +69,6 @@ export class GameManager {
         }
     }
 
-    countOccurrences(arr:Array<String>, val): number {
-        return arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
-    }
-
     async update(): Promise<void> {
         if(!this.currentShape) return;
         if(this.currentShape.goToNextRow()){
@@ -94,7 +90,7 @@ export class GameManager {
     async checkAndDeleteFullRows(): Promise<void> {
         for(let i=0; i<this.shared.memory.playing_table.length; i++){
             let row = this.shared.memory.playing_table[i]
-            if(this.countOccurrences(row, null) == 0){ // if row dont have null value it wins and i destroy it
+            if(!row.includes(null)){ // if row dont have null value it wins and i destroy it
                 await this.destroyRow(i);
                 this.addPoints(GENERAL_GAMEPLAY.POINTS_PER_LINE);
             }

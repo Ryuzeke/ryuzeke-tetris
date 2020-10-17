@@ -10,12 +10,10 @@ var shared:any = {
     }
 }
 function init(){
-    window.PIXI = PIXI;
-    Promise.resolve()
-    .then(initStageManager)
-    .then(initSceneContainer)
-    .then(initGameManager)
-
+    window.PIXI = PIXI; //debug reasons
+    initStageManager()
+    initSceneContainer()
+    initGameManager()
 }
 
 function initStageManager(){
