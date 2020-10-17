@@ -51,6 +51,7 @@ export class GameManager {
 
     public startPlay():void{
         this.currentPoints = 0;
+        this.sceneContainer.updateScore(this.currentPoints)
         this.generatePlayingTable();
         this.sceneContainer.validatePlayingArea()
         this.generateShape();
